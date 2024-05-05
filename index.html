@@ -28,38 +28,37 @@
                 <p>You know you want to.</p>
             </div>
             <div id="body">
-                <form action="get">
-                    <p>lets do this!</p>
+                <form action="get" id="hello">
+                    <p>Lets do this!</p>
                     <br>
 
-                    <div class="row">
-                        <label for="first_name">FIRST NAME</label>
-                        <input type="text" id="first_name">
+                        <div id="all-inputs">
+                            <div class="column">
+                                <label for="first_name">FIRST NAME*</label>
+                                <input type="text" id="first_name" required>
 
-                        <label for="last-name">LAST NAME</label>
-                        <input type="text" id="last-name">
-                    </div>
+                                <label for="email">EMAIL*</label>
+                                <input type="email" id="email" placeholder="example@gmail.com" required>
 
-                    <div class="row">
-                        <label for="email">EMAIL</label>
-                        <input type="email" id="email">
+                                <label for="password">PASSWORD*</label>
+                                <input type="password" id="password" required>
+                            </div>
+                            <div class="column">
+                                <label for="last-name">LAST NAME*</label>
+                                <input type="text" id="last-name" required>
 
-                        <label for="number">PHONE NUMBER</label>
-                        <input type="number">
-                    </div>
-
-                    <div class="row">
-                        <label for="password">PASSWORD</label>
-                        <input type="password" id="password">
-
-                        <label for="confirm-pass">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm-pass">
-                    </div>
+                                <label for="number">PHONE NUMBER</label>
+                                <input type="number" id="number" placeholder="0000-00000">
+                            
+                                <label for="confirm-pass">CONFIRM PASSWORD*</label>
+                                <input type="password" id="confirm-pass" required>
+                            </div>
+                        </div>
                 </form>
             </div>
             <div id="footer">
-                <button type="submit">Create Account</button>
-                <p>Already have an account? <a href="meow.com">LOG IN!</a></p>
+                <button type="submit" form="hello">Create Account</button>
+                <p>Already have an account? <a href="meow.com">Log in!</a></p>
             </div>
     </div>
 </body>
